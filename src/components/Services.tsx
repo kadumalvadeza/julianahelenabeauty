@@ -22,13 +22,17 @@ const Services = () => {
       description: "Penteados elegantes e sofisticados",
     },
     {
-      icon: Sparkles,
-      title: "Maquiagem + Penteado",
-      oldPrice: "R$ 399,80",
-      newPrice: "R$ 209,90",
-      discount: "47% OFF",
-      description: "Combo completo para você brilhar",
-      featured: true,
+     
+  icon: Sparkles,
+  title: "Maquiagem + Penteado",
+  oldPrice: "R$ 399,80",
+  newPrice: "R$ 209,90",
+  discount: "47% OFF",
+  description: "Combo completo para você brilhar",
+  featured: true,
+  label: "✨ DESTAQUE",
+  subLabel: "🔥 MAIS PEDIDO"
+
     },
     {
       icon: Star,
@@ -115,12 +119,25 @@ const Services = () => {
                 }`}
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                {/* Discount Badge */}
-                <div className="absolute top-4 right-4 z-10">
-                  <Badge className="bg-gradient-hero text-white font-poppins font-semibold px-3 py-1 shadow-soft">
-                    {service.discount}
-                  </Badge>
-                </div>
+                {/* Badges superiores centralizados */}
+<div className="absolute top-4 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2">
+  <Badge className="bg-gradient-hero text-white font-poppins font-semibold px-3 py-1 shadow-soft">
+    {service.discount}
+  </Badge>
+
+  {service.label && (
+    <Badge className="bg-gradient-to-r from-rose-500 to-pink-500 text-white font-poppins font-semibold px-3 py-1 shadow-soft animate-pulse">
+      {service.label}
+    </Badge>
+  )}
+
+  {service.subLabel && (
+    <Badge className="bg-gradient-to-r from-orange-500 to-red-500 text-white font-poppins font-semibold px-3 py-1 shadow-soft animate-bounce">
+      {service.subLabel}
+    </Badge>
+  )}
+</div>
+
 
                 {/* Premium Badge */}
                 {service.premium && (
