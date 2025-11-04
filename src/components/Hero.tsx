@@ -65,11 +65,11 @@ const Hero = () => {
           {/* Social Proof */}
           <div className="pt-8 flex items-center justify-center gap-8 text-white/90 font-poppins text-sm">
             <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-gold-light rounded-full animate-pulse" />
+              <div className="" />
               <span>   ㅤQuer saber se vale a pena? Veja você mesma o que dizem 👆</span>
             </div>
             <div className="hidden md:flex items-center gap-2">
-              <div className="w-2 h-2 bg-gold-light rounded-full animate-pulse" style={{ animationDelay: "0.5s" }} />
+              <div className="" style={{ animationDelay: "0.5s" }} />
 
             </div>
           </div>
