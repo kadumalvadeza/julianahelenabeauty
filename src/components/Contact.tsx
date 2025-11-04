@@ -30,8 +30,19 @@ const Contact = () => {
       return;
     }
 
-    const message = `Olá! Gostaria de agendar o serviço *${formData.service}* no dia *${formData.date}* às *${formData.time}*. Local: *${formData.location}*. Meu nome é ${formData.name}.`;
-    window.open(`https://wa.me/5521965000317?text=${encodeURIComponent(message)}`, "_blank");
+    const message = [
+  "Olá! Gostaria de confirmar meu agendamento:",
+  "",
+  `👤 Nome: ${formData.name}`,
+  `📞 Telefone: ${formData.phone}`,
+  `💅 Serviço: ${formData.service}`,
+  `📅 Data: ${formData.date}`,
+  `🕐 Horário: ${formData.time}`,
+  `📍 Local: ${formData.location}`
+].join("\n");
+
+window.open(`https://wa.me/5521965000317?text=${encodeURIComponent(message)}`, "_blank");
+
     
     toast.success("Redirecionando para o WhatsApp...");
     
