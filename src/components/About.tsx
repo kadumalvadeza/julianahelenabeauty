@@ -33,7 +33,42 @@ const About = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
           {/* Decorative Animation Side */}
-          <div className="relative animate-fade-in min-h-[600px] flex items-center justify-center">
+<div className="relative animate-fade-in min-h-[600px] flex items-center justify-">
+  {/* Depoimentos de Clientes */}
+<div className="relative animate-fade-in min-h-[600px] flex flex-col justify-center gap-10">
+  <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-elegant max-w-md mx-auto border border-rose-light">
+    <p className="font-poppins text-gray-700 italic mb-4">
+      “A maquiagem ficou simplesmente perfeita! Durou a festa toda e me senti maravilhosa. Atendimento impecável!”
+    </p>
+    <div className="flex items-center justify-between">
+      <div>
+        <p className="font-semibold text-rose-dark">— Mariana Alves</p>
+        <div className="flex text-gold-medium">
+          {[...Array(5)].map((_, i) => (
+            <span key={i}>★</span>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-elegant max-w-md mx-auto border border-rose-light">
+    <p className="font-poppins text-gray-700 italic mb-4">
+      “A Julia é incrível! Fiz o combo maquiagem + penteado e foi o melhor investimento. Super recomendo!”
+    </p>
+    <div className="flex items-center justify-between">
+      <div>
+        <p className="font-semibold text-rose-dark">— Camila Ribeiro</p>
+        <div className="flex text-gold-medium">
+          {[...Array(5)].map((_, i) => (
+            <span key={i}>★</span>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
             {/* Main decorative circle */}
             <div className="relative w-[400px] h-[400px]">
               {/* Center glowing circle */}

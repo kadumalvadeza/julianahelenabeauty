@@ -128,3 +128,19 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+@keyframes zoomMove {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-zoomMove {
+  animation: zoomMove 2.5s ease-in-out infinite;
+}
+

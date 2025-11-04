@@ -4,7 +4,7 @@ import heroImage from "@/assets/hero-makeup.jpg";
 
 const Hero = () => {
   const handleWhatsApp = () => {
-    window.open("https://wa.me/5521965000317?text=Olá! Gostaria de agendar um horário com a Julia Helena.", "_blank");
+    window.open("https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTU1MTg5Njc3Njg3MDYx?story_media_id=3415377340345869279&igsh=MTFzdHEwNnlsbzRpdw==", "_blank");
   };
 
   return (
@@ -51,16 +51,15 @@ const Hero = () => {
 
           <div className="pt-4">
   <Button
-    onClick={handleWhatsApp}
-    size="lg"
-    className="relative bg-white text-primary hover:bg-white/95 font-poppins font-semibold text-base px-10 py-5 rounded-full shadow-glow hover:scale-105 transition-all duration-300 group overflow-hidden"
-  >
-    <span className="relative z-10">Agendar agora pelo WhatsApp</span>
-    <Sparkles className="ml-2 w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
-
-    {/* Efeito maquiagem */}
-    <span className="absolute inset-0 bg-gradient-to-r from-pink-300 via-rose-400 to-pink-500 opacity-0 group-hover:opacity-70 transition-opacity duration-700 rounded-full blur-md"></span>
-  </Button>
+  onClick={handleWhatsApp}
+  size="lg"
+  className="relative bg-white text-primary hover:bg-white/95 font-poppins font-semibold text-base px-10 py-5 rounded-full shadow-glow transition-all duration-300 group overflow-hidden animate-zoomMove"
+>
+  <span className="relative z-10 flex items-center justify-center">
+    VEJA FEEDBACKS DE CLIENTES REAIS
+    <Sparkles className="ml-2 w-5 h-5 transition-transform duration-300" />
+  </span>
+</Button>
 </div>
 
           {/* Social Proof */}
