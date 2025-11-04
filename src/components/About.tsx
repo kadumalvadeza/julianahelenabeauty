@@ -86,7 +86,7 @@ const About = () => {
               </div>
               
               {/* Inner circle with gradient */}
-              <div className="absolute inset-16 rounded-full bg-gradient-to-br from-rose-light via-pearl to-gold-light/50 shadow-elegant flex items-center justify-center">
+              <div className="absolute inset-6 rounded-full bg-gradient-to-br from-rose-light via-pearl to-gold-light/50 shadow-elegant flex items-center justify-center">
                 <div className="text-center space-y-2 animate-float">
                   <Sparkles className="w-16 h-16 text-rose-dark mx-auto" />
                   <p className="font-playfair text-5xl font-bold bg-gradient-to-r from-rose-dark to-gold-medium bg-clip-text text-transparent">
