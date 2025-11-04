@@ -135,7 +135,7 @@ const About = () => {
 
               <p className="font-poppins text-lg text-foreground/90 leading-relaxed">
                 Trabalho com amor, técnica e produtos de alta qualidade, no
-                conforto do seu lar ou no meu estúdio. Cada cliente é única, e
+                conforto do seu lar no estúdio. Cada cliente é única, e
                 meu compromisso é fazer você se sentir{" "}
                 <span className="font-semibold text-primary">
                   radiante e confiante

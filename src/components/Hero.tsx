@@ -66,7 +66,7 @@ const Hero = () => {
           <div className="pt-8 flex items-center justify-center gap-8 text-white/90 font-poppins text-sm">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-gold-light rounded-full animate-pulse" />
-              <span>   ㅤ👆 Clique no botão e veja alguns depoimentos 👆</span>
+              <span>   ㅤQuer saber se vale a pena? Veja você mesma o que dizem 👆</span>
             </div>
             <div className="hidden md:flex items-center gap-2">
               <div className="w-2 h-2 bg-gold-light rounded-full animate-pulse" style={{ animationDelay: "0.5s" }} />
