@@ -53,7 +53,7 @@ const Hero = () => {
   <Button
     onClick={handleWhatsApp}
     size="lg"
-    className="bg-white text-primary hover:bg-white/95 font-poppins font-semibold text-lg px-12 py-7 rounded-full shadow-glow hover:scale-105 transition-all duration-300 group transform translate-x-[-25px]"
+    className="bg-white text-primary hover:bg-white/95 font-poppins font-semibold text-lg px-12 py-7 rounded-full shadow-glow hover:scale-105 transition-all duration-300 group transform translate-x-[-19px]"
   >
     Agendar agora pelo WhatsApp
     <Sparkles className="ml-2 w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
