@@ -6,6 +6,19 @@ import { Sparkles, Heart, Crown, Star } from "lucide-react";
 const Services = () => {
   const services = [
     {
+     
+  icon: Sparkles,
+  title: "Maquiagem + Penteado",
+  oldPrice: "R$ 399,80",
+  newPrice: "R$ 209,90",
+  discount: "47% OFF",
+  description: "Combo completo para você brilhar",
+  featured: true,
+  label: "✨ DESTAQUE",
+  subLabel: "🔥 MAIS PEDIDO"
+
+    },
+    {
       icon: Sparkles,
       title: "Maquiagem",
       oldPrice: "R$ 199,90",
@@ -20,19 +33,6 @@ const Services = () => {
       newPrice: "R$ 159,90",
       discount: "20% OFF",
       description: "Penteados elegantes e sofisticados",
-    },
-    {
-     
-  icon: Sparkles,
-  title: "Maquiagem + Penteado",
-  oldPrice: "R$ 399,80",
-  newPrice: "R$ 209,90",
-  discount: "47% OFF",
-  description: "Combo completo para você brilhar",
-  featured: true,
-  label: "✨ DESTAQUE",
-  subLabel: "🔥 MAIS PEDIDO"
-
     },
     {
       icon: Star,
